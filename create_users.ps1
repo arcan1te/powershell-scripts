@@ -1,6 +1,6 @@
 # ----- Edit these variables ----- #
-$PASSWORD_FOR_USERS   = "Password123!"
-$USER_FIRST_LAST_LIST = Get-Content .\employees.txt
+$PASSWORD_FOR_USERS   = "Password1"
+$USER_FIRST_LAST_LIST = Get-Content .\names.txt
 # ------------------------------------------------------ #
 
 $password = ConvertTo-SecureString $PASSWORD_FOR_USERS -AsPlainText -Force
