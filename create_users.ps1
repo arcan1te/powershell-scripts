@@ -17,7 +17,8 @@ foreach ($n in $USER_FIRST_LAST_LIST) {
                -Surname $last `
                -Name $name `
                -DisplayName $name `
-               -userPrincipalName $username `
+               -UserPrincipalName $username `
+               -SamAccountName $username `
                -EmployeeID $username `
                -Path "ou=_USERS,$(([ADSI]`"").distinguishedName)" `
                -Enabled $true `
